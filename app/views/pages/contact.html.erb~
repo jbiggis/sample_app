@@ -1,4 +1,4 @@
-<title><%=title%></title>
+<title>Ruby on Rails Tutorial Sample App | Contact</title>
 <h1>Pages#contact</h1>
 
 <p>Find me in app/views/pages/contact.html.erb</p>
