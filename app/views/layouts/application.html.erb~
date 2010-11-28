@@ -10,9 +10,10 @@
       <%= render 'layouts/header' %>
       <section class="round">
         <%= yield %>
-      </section>
+	</section>
+	      <%= render 'layouts/footer' %>
     </div>
-      <%= render 'layouts/footer' %>
+
 
 
   </body>
