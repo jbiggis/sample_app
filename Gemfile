@@ -7,6 +7,8 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem 'gravatar_image_tag'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -36,6 +38,7 @@ end
 
 group :test do
 
+gem 'factory_girl_rails'
 gem 'rspec', '2.1.0'
 gem 'webrat', '0.7.1'
 gem 'spork'
