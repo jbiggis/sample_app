@@ -12,7 +12,9 @@
 
 class User < ActiveRecord::Base
 
-attr_accessor :password, :password_confirmation
+has_many :microposts, :dependent => :destroy
+
+attr_accessor :password
 
 attr_accessible :name, :email, :password, :password_confirmation
 
@@ -72,7 +74,18 @@ encrypted_password == encrypt(submitted_password)
 
 end
 
-  private
+
+def feed
+
+	#This is preliminary
+	Micropost.where("user_id = ?", id)
+
+end
+
+
+
+
+private
 
     def encrypt_password
 
