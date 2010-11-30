@@ -19,7 +19,8 @@ class SessionsController < ApplicationController
 
 	else
 		sign_in user		#sign in user and redirect to user show page
-		redirect_to user
+		
+		redirect_back_or user
 	end
   end
 
